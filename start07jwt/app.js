@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: require("node:path").join(__dirname, ".env")
+});
+
 const express = require("express");
 const dbConnect = require("./config/dbConnect");
 const methodOverride = require("method-override");
