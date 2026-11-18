@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const path = require("node:path");
-require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
+require("dotenv").config({ path: path.join(__dirname, "..", "..", ".env") });
 const jwtSecret = process.env.JWT_SECRET;
 if (!jwtSecret) {
   throw new Error("JWT_SECRET을 sqlite/.env 또는 환경변수로 설정해 주세요.");
